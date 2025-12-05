@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - Problema_2_4</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Condicionales</span>
+          <h2 id="exercise-title">Problema_2_4: Evaluación de Calificaciones</h2>
+          
+          <p class="exercise-description">
+            Este programa lee la matrícula (MAT) y cinco calificaciones de un estudiante, calcula el 
+            promedio de las notas y determina si el estudiante aprobó (promedio ≥ 6) o no aprobó 
+            (promedio < 6). Es un ejemplo de uso de condicionales if/else.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer la matrícula (MAT) del estudiante.</li>
+              <li>Leer cinco calificaciones: <code>CAL1</code>, <code>CAL2</code>, <code>CAL3</code>, <code>CAL4</code>, <code>CAL5</code>.</li>
+              <li>Calcular el promedio: <code>PRO = (CAL1 + CAL2 + CAL3 + CAL4 + CAL5) / 5</code></li>
+              <li>Determinar estado:
+                <ul>
+                  <li>Si <code>PRO >= 6</code>: mostrar "APROBADO"</li>
+                  <li>Si <code>PRO < 6</code>: mostrar "NO APROBADO"</li>
+                </ul>
+              </li>
+              <li>Mostrar matrícula, promedio y estado.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Entrada:</strong> Matrícula y 5 calificaciones numéricas.</li>
+              <li><strong>Procesamiento:</strong> Suma las 5 calificaciones, divide por 5 para obtener promedio.</li>
+              <li><strong>Decisión:</strong> Verifica si el promedio es mayor o igual a 6.</li>
+              <li><strong>Salida:</strong> Imprime los datos del estudiante y su estado de aprobación.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese MAT: 12345
+Ingrese CAL1: 7.5
+Ingrese CAL2: 8.0
+Ingrese CAL3: 6.5
+Ingrese CAL4: 7.0
+Ingrese CAL5: 8.5
+MAT: 12345
+PRO: 7.5
+Estado: APROBADO</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se usa la estructura <code>if...else</code> para la toma de decisiones.</li>
+              <li>El criterio de aprobación es promedio mayor o igual a 6.0.</li>
+              <li>Las calificaciones pueden ser decimales.</li>
+              <li>Ejemplo de caso límite: promedio exacto de 6.0 aprueba.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Condicionales if/else</li>
+              <li>Operadores de comparación</li>
+              <li>Cálculo de promedios</li>
+              <li>Toma de decisiones</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Recuerda que el criterio de aprobación es >= 6, 
+              no > 6. Un estudiante con promedio de exactamente 6.0 aprueba.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - Ejemplo_4_12</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Arrays y Algoritmos</span>
+          <h2 id="exercise-title">Ejemplo_4_12: Ordenamiento de Arrays</h2>
+          
+          <p class="exercise-description">
+            Este programa utiliza el algoritmo de selección directa para ordenar un arreglo de números 
+            en orden ascendente. Implementa bucles anidados para encontrar el elemento mínimo en cada 
+            posición e intercambiarlo con el elemento actual. Es un ejemplo clásico de cómo trabajar 
+            con arreglos y algoritmos de ordenamiento.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer la cantidad de elementos (N, máximo 50).</li>
+              <li>Leer N números enteros en un arreglo.</li>
+              <li>Ordenar el arreglo usando el algoritmo de selección directa.</li>
+              <li>Mostrar el arreglo ordenado separado por comas.</li>
+            </ul>
+            
+            <h3>Algoritmo de Selección Directa</h3>
+            <ul>
+              <li>Para cada posición i desde 0 hasta N-2:</li>
+              <li>Encontrar el índice del elemento mínimo desde i+1 hasta N-1.</li>
+              <li>Intercambiar el elemento en posición i con el elemento mínimo encontrado.</li>
+              <li>El resultado es un arreglo ordenado en orden ascendente.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese N (cantidad de elementos, max 50): 5
+Ingrese elemento 1: 45
+Ingrese elemento 2: 23
+Ingrese elemento 3: 67
+Ingrese elemento 4: 12
+Ingrese elemento 5: 89
+Arreglo ordenado:
+12, 23, 45, 67, 89</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se declara un arreglo: <code>int[] UNI = new int[N]</code></li>
+              <li>Se usan dos bucles anidados: el externo para cada posición, el interno para buscar el mínimo.</li>
+              <li>El intercambio de elementos se realiza con una variable temporal (TEMP).</li>
+              <li>La complejidad del algoritmo es O(n²), apropiada para números pequeños.</li>
+              <li>Funciona para números positivos, negativos y cero.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Declaración y uso de arreglos</li>
+              <li>Bucles anidados</li>
+              <li>Intercambio de variables (swap)</li>
+              <li>Algoritmo de ordenamiento</li>
+              <li>Búsqueda de mínimo en un rango</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> El algoritmo de selección es simple pero no es el más eficiente 
+              para grandes cantidades de datos. Para arreglos grandes, considera usar Quicksort o Mergesort.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

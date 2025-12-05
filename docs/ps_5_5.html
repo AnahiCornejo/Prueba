@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - PS_5_5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Avanzado</span>
+          <h2 id="exercise-title">PS_5_5: Sistema de Gestión de Hotel</h2>
+          
+          <p class="exercise-description">
+            Este programa implementa un sistema completo de gestión hotelera. Define una clase 
+            interna Habitacion con atributos como número, tipo, precio, disponibilidad y huésped. 
+            Implementa operaciones CRUD completas a través de un menú: agregar habitaciones, 
+            listar todas, buscar por huésped, filtrar disponibles, eliminar, y salir. Es un 
+            ejemplo avanzado de programación orientada a objetos y gestión de datos.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Definir una clase interna <code>Habitacion</code> con atributos:
+                <ul>
+                  <li>NUM: número de habitación (int)</li>
+                  <li>TIPO: tipo de habitación (SI=Simple, DO=Doble, TR=Triple, SU=Suite)</li>
+                  <li>PRECIO: precio por noche (double)</li>
+                  <li>DISP: disponibilidad (SI/NO)</li>
+                  <li>HUESPED: nombre del huésped (vacío si disponible)</li>
+                </ul>
+              </li>
+              <li>Implementar menú con 6 opciones:
+                <ul>
+                  <li><strong>1. Agregar habitación</strong> - Crear nueva habitación en el arreglo.</li>
+                  <li><strong>2. Listar habitaciones</strong> - Mostrar todas las habitaciones.</li>
+                  <li><strong>3. Buscar por huésped</strong> - Encontrar dónde está un huésped específico.</li>
+                  <li><strong>4. Buscar disponibles</strong> - Mostrar solo habitaciones disponibles.</li>
+                  <li><strong>5. Eliminar habitación</strong> - Remover una habitación del sistema.</li>
+                  <li><strong>6. Salir</strong> - Terminar el programa.</li>
+                </ul>
+              </li>
+              <li>Validar que no se agreguen más de 100 habitaciones.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Estructura:</strong> Arreglo de hasta 100 objetos Habitacion.</li>
+              <li><strong>Menú principal:</strong> Loop infinito hasta opción 6.</li>
+              <li><strong>Agregar:</strong> Crear nuevo objeto, llenar sus atributos, almacenar en arreglo.</li>
+              <li><strong>Listar:</strong> Iterar sobre todas las habitaciones y mostrar información.</li>
+              <li><strong>Buscar huésped:</strong> Buscar coincidencia con HUESPED.</li>
+              <li><strong>Disponibles:</strong> Filtrar habitaciones donde DISP = "SI".</li>
+              <li><strong>Eliminar:</strong> Desplazar elementos para remover una habitación.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">=== SISTEMA DE HOTEL ===
+1. Agregar habitación
+2. Listar habitaciones
+3. Buscar por nombre de huésped
+4. Buscar disponibles
+5. Eliminar habitación
+6. Salir
+Seleccione opción: 1
+Número de habitación: 101
+Tipo (SI/DO/TR/SU): DO
+Precio: 150.0
+Disponible (SI/NO): SI
+Habitación 101 agregada.
+
+=== SISTEMA DE HOTEL ===
+...
+Seleccione opción: 2
+--- Habitaciones ---
+Habitación 101: Doble, Precio: 150.0, Disponible: SI
+
+=== SISTEMA DE HOTEL ===
+...
+Seleccione opción: 6
+¡Adiós!</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>La clase Habitacion es una clase interna estática (static inner class).</li>
+              <li>Se usa <code>new Habitacion()</code> para crear instancias.</li>
+              <li>Se mantiene variable CANTIDAD para saber cuántas habitaciones hay.</li>
+              <li>Se valida CANTIDAD >= 100 antes de agregar.</li>
+              <li>Búsquedas usan bucles for para iterar sobre el arreglo.</li>
+              <li>Eliminación requiere desplazar elementos hacia la izquierda.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Clases y objetos</li>
+              <li>Clases anidadas (inner classes)</li>
+              <li>Arreglos de objetos</li>
+              <li>Menús avanzados</li>
+              <li>Operaciones CRUD completas</li>
+              <li>Filtrado y búsqueda de datos</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Este patrón de menú + arreglo de objetos + operaciones CRUD 
+              es fundamental en sistemas empresariales reales. Domina este patrón y aplicarás 
+              a muchos sistemas.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

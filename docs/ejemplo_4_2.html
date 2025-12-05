@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - Ejemplo_4_2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Bucles While</span>
+          <h2 id="exercise-title">Ejemplo_4_2: Suma de Sueldos</h2>
+          
+          <p class="exercise-description">
+            Este programa utiliza un bucle while para leer exactamente 70 sueldos de empleados, 
+            los acumula en una suma y luego calcula el promedio. Es un ejemplo clásico de uso 
+            de bucles while con contadores para procesar un número fijo de datos.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Usar un bucle <code>while</code> para leer exactamente 70 sueldos.</li>
+              <li>Acumular todos los sueldos en la variable SUELDOS.</li>
+              <li>Calcular el promedio: <code>PROM = SUELDOS / 70</code></li>
+              <li>Mostrar la suma total y el promedio.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Inicialización:</strong> Contador CONT = 0, acumulador SUELDOS = 0.</li>
+              <li><strong>Condición del while:</strong> Continuar mientras CONT < 70.</li>
+              <li><strong>Procesamiento:</strong> En cada iteración, leer un sueldo y sumarlo.</li>
+              <li><strong>Incremento:</strong> Aumentar el contador en 1.</li>
+              <li><strong>Cálculo:</strong> Dividir la suma total entre 70.</li>
+              <li><strong>Salida:</strong> Mostrar suma y promedio.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese sueldo 1: 1500
+Ingrese sueldo 2: 2000
+Ingrese sueldo 3: 1800
+...
+Ingrese sueldo 70: 2200
+Total de sueldos: 127500.0
+Promedio de sueldos: 1821.43</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se utiliza un bucle <code>while</code> en lugar de for para demostrar otra forma de iterar.</li>
+              <li>El contador es esencial para saber cuándo terminar el bucle.</li>
+              <li>El acumulador suma todos los valores sin perder los anteriores.</li>
+              <li>Se leen exactamente 70 sueldos, no más ni menos.</li>
+              <li>El promedio es un número decimal que puede tener decimales.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Bucles while</li>
+              <li>Contadores</li>
+              <li>Acumuladores</li>
+              <li>Condiciones de terminación</li>
+              <li>Cálculo de promedios</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> La diferencia entre <code>while</code> y <code>for</code> es que 
+              <code>while</code> es más flexible y no requiere que sepas de antemano cuántas iteraciones necesitas, 
+              aunque en este caso ambas son válidas.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - PS_3_38</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Sistemas Complejos</span>
+          <h2 id="exercise-title">PS_3_38: Sistema de Facturación de Restaurante</h2>
+          
+          <p class="exercise-description">
+            Este programa implementa un sistema de facturación para un restaurante. El usuario define 
+            los precios de 7 platillos, luego puede crear múltiples facturas ingresando la clave del 
+            platillo y la cantidad. El sistema calcula el total por factura y un total acumulado del día. 
+            Es un ejemplo de sistema real con bucles anidados y gestión de datos.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer los precios de 7 platillos en un arreglo.</li>
+              <li>Permitir crear múltiples facturas mediante un bucle.</li>
+              <li>Para cada factura:
+                <ul>
+                  <li>Leer cantidad de líneas de factura (N).</li>
+                  <li>Para cada línea: leer clave de platillo (1-7) y cantidad.</li>
+                  <li>Calcular subtotal de la línea: PRECIO × CANTIDAD.</li>
+                  <li>Acumular total del cliente.</li>
+                </ul>
+              </li>
+              <li>Acumular el total del día de todas las facturas.</li>
+              <li>Mostrar el total de facturas y dinero al final del día.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Inicialización:</strong> Leer precios de 7 platillos.</li>
+              <li><strong>Bucle principal:</strong> Procesar facturas hasta que el usuario ingrese 0.</li>
+              <li><strong>Bucle de factura:</strong> Para cada factura, procesar N líneas.</li>
+              <li><strong>Cálculos:</strong> Multiplicar precio por cantidad y acumular.</li>
+              <li><strong>Salida:</strong> Mostrar total del día al terminar.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese los precios de los 7 platillos:
+Precio platillo 1: 100
+Precio platillo 2: 150
+...
+Precio platillo 7: 250
+
+Ingrese 0 en número de facturas para terminar.
+
+Ingrese número de facturas (0 para terminar): 2
+
+--- Factura #1 ---
+Ingrese clave del platillo (1-7): 2
+Ingrese cantidad: 3
+Subtotal factura #1: 450.0
+
+Ingrese clave del platillo (1-7): 5
+Ingrese cantidad: 1
+Subtotal factura #2: 200.0
+Total cliente: 650.0
+
+--- Factura #3 ---
+Ingrese clave del platillo (1-7): 1
+Ingrese cantidad: 2
+Subtotal factura #3: 200.0
+Total cliente: 200.0
+
+=== TOTAL VENDIDO DEL DÍA ===
+Total facturas: 3
+Total dinero: 850.0</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se usa un arreglo para almacenar los 7 precios (índice 1-7).</li>
+              <li>Bucle externo: procesa múltiples clientes (facturas).</li>
+              <li>Bucle intermedio: procesa N líneas por factura.</li>
+              <li>Se acumulan totales en dos niveles: por cliente y por día.</li>
+              <li>Se valida que la clave de platillo esté entre 1 y 7.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Arreglos unidimensionales</li>
+              <li>Bucles anidados</li>
+              <li>Acumuladores múltiples</li>
+              <li>Validación de entrada</li>
+              <li>Sistemas de punto de venta</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Este patrón de bucles anidados es muy común en sistemas 
+              reales de facturación. Observa cómo se manejan múltiples niveles de acumulación.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

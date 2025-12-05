@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - Problema_2_8</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Condicionales Anidados</span>
+          <h2 id="exercise-title">Problema_2_8: Cálculo de Descuentos por Rango</h2>
+          
+          <p class="exercise-description">
+            Este programa lee el monto de una compra y aplica un descuento según rangos predefinidos. 
+            Utiliza condicionales anidados para determinar qué porcentaje de descuento corresponde a cada 
+            rango de monto. Es un ejemplo práctico de decisiones escalonadas.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer el monto de la compra.</li>
+              <li>Aplicar descuentos según los siguientes rangos:
+                <ul>
+                  <li>Compra &lt; 500: 0% de descuento</li>
+                  <li>Compra entre 500 y 1000: 5% de descuento</li>
+                  <li>Compra entre 1001 y 7000: 11% de descuento</li>
+                  <li>Compra entre 7001 y 15000: 18% de descuento</li>
+                  <li>Compra &gt; 15000: 25% de descuento</li>
+                </ul>
+              </li>
+              <li>Calcular el descuento y el monto final a pagar.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Entrada:</strong> Monto de la compra (número decimal).</li>
+              <li><strong>Procesamiento:</strong> Determinar el porcentaje según el rango del monto.</li>
+              <li><strong>Cálculo:</strong> Aplicar el descuento y calcular el monto final.</li>
+              <li><strong>Salida:</strong> Mostrar monto original, descuento, porcentaje y monto final.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese el monto de la compra: 8500
+Monto de compra: 8500.0
+Porcentaje de descuento: 18%
+Descuento: 1530.0
+Monto a pagar: 6970.0</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se usan condicionales if/else if/else anidadas para evaluar rangos.</li>
+              <li>La fórmula del descuento es: <code>DESCUENTO = COMPRA * PORCEN / 100</code></li>
+              <li>El monto final es: <code>PAGAR = COMPRA - DESCUENTO</code></li>
+              <li>Los límites de rangos son inclusive/exclusive según se especifique.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Condicionales anidadas</li>
+              <li>Operadores de comparación</li>
+              <li>Lógica de rangos</li>
+              <li>Cálculo de porcentajes</li>
+              <li>Operadores AND (&&) y OR (||)</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Ten cuidado con los límites de los rangos. 
+              Por ejemplo, una compra de exactamente 500 entra en el rango de 500-1000 con 5% de descuento.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

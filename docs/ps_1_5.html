@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - PS_1_5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Cálculos</span>
+          <h2 id="exercise-title">PS_1_5: Cálculo de Interés Bancario</h2>
+          
+          <p class="exercise-description">
+            Este programa simula un cálculo bancario simple. Lee el monto inicial de dinero (MD) 
+            y la tasa de interés mensual (TASA), luego calcula cuánto dinero ganará por concepto 
+            de interés y el monto total después de un mes. Es un ejemplo práctico de aplicación 
+            de matemáticas financieras.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer el monto de dinero inicial (MD).</li>
+              <li>Leer la tasa de interés mensual (TASA) como porcentaje.</li>
+              <li>Calcular el interés ganado: <code>INTERES = MD * TASA / 100</code></li>
+              <li>Calcular el monto final: <code>MF = MD + INTERES</code></li>
+              <li>Mostrar monto inicial, tasa, interés ganado y monto final.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Entrada:</strong> Monto inicial y tasa de interés.</li>
+              <li><strong>Procesamiento:</strong> Calcular cuánto es el porcentaje de interés.</li>
+              <li><strong>Cálculo:</strong> Sumar el interés al monto original.</li>
+              <li><strong>Salida:</strong> Mostrar todos los valores calculados.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese el monto de dinero (MD): 1000
+Ingrese la tasa de interés mensual (TASA): 5
+Monto inicial: 1000.0
+Tasa de interés mensual: 5.0%
+Interés ganado: 50.0
+Monto final al mes: 1050.0</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>La tasa de interés se expresa como porcentaje (ej: 5 significa 5%).</li>
+              <li>La fórmula es: Interés = Capital × Tasa / 100.</li>
+              <li>El monto final es: Capital + Interés.</li>
+              <li>Este cálculo simula interés simple por un período de un mes.</li>
+              <li>Los valores son números decimales para mayor precisión.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Variables numéricas</li>
+              <li>Cálculo de porcentajes</li>
+              <li>Fórmulas financieras</li>
+              <li>Entrada/Salida</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Este es un ejemplo de interés simple. En la banca real, 
+              el interés compuesto es más común, donde se calcula interés sobre el interés en períodos posteriores.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

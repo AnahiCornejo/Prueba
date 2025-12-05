@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - Problema_3_5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Loops</span>
+          <h2 id="exercise-title">Problema_3_5: Procesamiento de N Números</h2>
+          
+          <p class="exercise-description">
+            Este programa lee N números desde el usuario y calcula dos promedios: el promedio de los 
+            números positivos y el promedio de todos los números ingresados. Utiliza un bucle for 
+            para iterar sobre cada número y condicionales para seleccionar solo los positivos.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer la cantidad de números (N).</li>
+              <li>Leer N números del usuario.</li>
+              <li>Calcular:
+                <ul>
+                  <li>Cantidad de números positivos (CUPOS)</li>
+                  <li>Suma de números positivos (SUMPOS)</li>
+                  <li>Suma de todos los números (SUPMIOS)</li>
+                </ul>
+              </li>
+              <li>Calcular promedios:
+                <ul>
+                  <li>PROPOS = SUMPOS / CUPOS (si CUPOS > 0, sino 0)</li>
+                  <li>PROALL = SUPMIOS / N</li>
+                </ul>
+              </li>
+              <li>Mostrar la cantidad de positivos y ambos promedios.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Entrada:</strong> Cantidad N y luego N números.</li>
+              <li><strong>Procesamiento:</strong> Iterar sobre cada número con un for loop.</li>
+              <li><strong>Condicional:</strong> Si el número es positivo, sumarlo a SUMPOS y contar.</li>
+              <li><strong>Cálculo:</strong> Dividir sumas por sus respectivos conteos.</li>
+              <li><strong>Salida:</strong> Mostrar cantidad de positivos y promedios.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese la cantidad de números (N): 5
+Ingrese el número 1: 10
+Ingrese el número 2: -5
+Ingrese el número 3: 15
+Ingrese el número 4: 0
+Ingrese el número 5: 8
+Cantidad de números: 5
+Cantidad de positivos: 3
+Promedio de positivos: 11.0
+Promedio de todos: 5.6</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se utiliza un bucle <code>for</code> para iterar desde 1 hasta N.</li>
+              <li>Se verifica si el número es positivo con <code>if (NUM > 0)</code>.</li>
+              <li>El cero (0) no se cuenta como positivo.</li>
+              <li>Si no hay positivos, el promedio de positivos es 0 para evitar división por cero.</li>
+              <li>El promedio de todos incluye números negativos y ceros.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Bucles for</li>
+              <li>Acumuladores</li>
+              <li>Contadores</li>
+              <li>Condicionales dentro de loops</li>
+              <li>Manejo de casos especiales (división por cero)</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Recuerda que los números positivos son aquellos > 0. 
+              El cero no es ni positivo ni negativo, así que no se incluye en el promedio de positivos.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>

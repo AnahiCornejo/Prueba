@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios de Programación Estructurada - PS_4_10</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <h1>Ejercicios de Programación Estructurada en Java</h1>
+      <p class="subtitle">Aprende desde lo básico hasta sistemas completos</p>
+    </header>
+
+    <main class="exercises-main">
+      <article class="exercise-card" aria-labelledby="exercise-title">
+        <header class="exercise-header">
+          <span class="exercise-badge">Estructuras de Datos</span>
+          <h2 id="exercise-title">PS_4_10: Gestión de Arreglo Ordenado</h2>
+          
+          <p class="exercise-description">
+            Este programa implementa un sistema de menú que permite al usuario trabajar con un 
+            arreglo ordenado de números. Puede visualizar el arreglo actual, insertar nuevos 
+            elementos manteniendo el orden, o eliminar elementos existentes. Es un ejemplo de 
+            implementación de operaciones CRUD (Create, Read, Update, Delete) sobre estructuras 
+            de datos.
+          </p>
+        </header>
+        
+        <div class="exercise-content">
+          <section class="exercise-main">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Leer N elementos iniciales (deben estar ya ordenados).</li>
+              <li>Implementar un menú con 4 opciones:
+                <ul>
+                  <li><strong>Opción 1: Mostrar</strong> - Visualizar todos los elementos del arreglo.</li>
+                  <li><strong>Opción 2: Insertar</strong> - Agregar un nuevo elemento en la posición correcta manteniendo el orden.</li>
+                  <li><strong>Opción 3: Eliminar</strong> - Remover un elemento específico del arreglo.</li>
+                  <li><strong>Opción 4: Salir</strong> - Terminar el programa.</li>
+                </ul>
+              </li>
+              <li>Validar que el arreglo no esté lleno al insertar.</li>
+              <li>Usar búsqueda binaria o lineal para encontrar la posición de inserción.</li>
+            </ul>
+            
+            <h3>Lógica del Programa</h3>
+            <ul>
+              <li><strong>Inicialización:</strong> Leer N elementos en orden.</li>
+              <li><strong>Menú principal:</strong> Repetir hasta opción 4.</li>
+              <li><strong>Mostrar:</strong> Imprimir todos los elementos separados por comas.</li>
+              <li><strong>Insertar:</strong> Encontrar posición, desplazar elementos, insertar nuevo.</li>
+              <li><strong>Eliminar:</strong> Encontrar elemento, desplazar hacia atrás, reducir cantidad.</li>
+            </ul>
+
+            <h3>Ejemplo de Ejecución</h3>
+            <pre><code class="code-block">Ingrese N (cantidad de elementos, max 100): 3
+Ingrese los 3 elementos (deben estar ordenados):
+Elemento 1: 10
+Elemento 2: 30
+Elemento 3: 50
+
+=== MENÚ ===
+1. Mostrar arreglo
+2. Insertar elemento
+3. Eliminar elemento
+4. Salir
+Seleccione opción: 1
+Arreglo actual:
+10, 30, 50
+
+=== MENÚ ===
+1. Mostrar arreglo
+2. Insertar elemento
+3. Eliminar elemento
+4. Salir
+Seleccione opción: 2
+Ingrese el elemento a insertar: 25
+Insertado en posición 1.
+Arreglo actual:
+10, 25, 30, 50
+
+=== MENÚ ===
+1. Mostrar arreglo
+2. Insertar elemento
+3. Eliminar elemento
+4. Salir
+Seleccione opción: 3
+Ingrese el elemento a eliminar: 30
+Elemento 30 eliminado.
+Arreglo actual:
+10, 25, 50</code></pre>
+
+            <h3>Detalles Técnicos</h3>
+            <ul>
+              <li>Se mantiene una variable CANTIDAD para saber cuántos elementos hay realmente.</li>
+              <li>El arreglo tiene capacidad máxima de 100, pero solo se usan los primeros CANTIDAD.</li>
+              <li>Al insertar: encontrar posición, desplazar elementos hacia la derecha, colocar nuevo elemento.</li>
+              <li>Al eliminar: desplazar elementos hacia la izquierda, reducir CANTIDAD.</li>
+              <li>El arreglo se mantiene siempre ordenado después de cada operación.</li>
+            </ul>
+          </section>
+          
+          <aside class="exercise-sidebar">
+            <h3>Notas rápidas</h3>
+            <p class="note-text">Recuerda que:</p>
+            <ul>
+              <li>Operaciones en arreglos</li>
+              <li>Búsqueda de posición</li>
+              <li>Desplazamiento de elementos</li>
+              <li>Menús interactivos</li>
+              <li>Mantenimiento de invariantes (orden)</li>
+            </ul>
+            
+            <div class="tip-box">
+              <strong>Tip:</strong> Al insertar, primero debes encontrar dónde va el elemento, 
+              luego desplazar todos los elementos a la derecha y finalmente insertar el nuevo.
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <p><a href="index.html">← Volver al índice</a></p>
+    </footer>
+  </div>
+</body>
+</html>
